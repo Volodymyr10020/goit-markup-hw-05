@@ -445,14 +445,23 @@
                 placeholder="E-mail"
               />
             </label>
-            <li class="bottom-sub-item"><button class="bottom-btn" type="submit">Subscribe</button>
+            <li class="bottom-sub-item"><button class="bottom-btn" type="submit">Subscribe<svg style="fill: #ffffff;"><use href="./images/icons.svg#icon-Frame3"></use></svg></button>
           </form>
         </ul>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
-      <div class="modal"></div>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close-btn"><svg class="input-icon"><use href="./images/icons.svg#icon-close-black-18dp-2-1"></svg></button>
+<p class="modal-title">Leave your contacts and we will call you back</p>
+<form class="modal-form">
+<label for="user-name" class="modal-input-title">Name<svg style="fill: #404BBF" class="input-icon" width="18" height="24"><use href="./images/icons.svg#icon-person-black-18dp-1"></use></svg><input type="text" class="modal-input" name="user-name"></label>
+  <label for="user-tel" class="modal-input-title">Phone<svg class="input-icon" width="18" height="24"><use href="./images/icons.svg#icon-phone-black-18dp-1"></use></svg><input type="tel" class="modal-input" name="user-tel"></label>
+  <label for="user-email" class="modal-input-title">Email<svg class="input-icon" width="18" height="24"><use href="./images/icons.svg#icon-email-black-18dp-1"></use></svg><input type="email" class="modal-input" name="user-email"></label>
+  <button type="submit" class="modal-btn">Send</button>
+</form>
+      </div>
     </div>
   </body>
 </html>
